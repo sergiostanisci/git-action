@@ -51,4 +51,6 @@ jobs:
   docker: 
     needs: build
     uses: ./.github/workflows/Docker.yml
+    #habilita uso da senha do outro arquivo docker.yml que usa env com senha
+    secrets: inherit
     
